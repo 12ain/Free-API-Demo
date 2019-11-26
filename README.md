@@ -1,4 +1,4 @@
-# high
+# example
 
 ## Project setup
 ```
