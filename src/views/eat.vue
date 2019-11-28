@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-
+        <van-nav-bar title="今天吃什么"/>
         <tabbar/>
     </div>
 </template>
@@ -39,5 +39,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+/deep/ .van-tabbar-item{
+    background-color: #CCCCFF;
+}
+.van-nav-bar{
+    background-color: #CCCCFF;
+}
+
 
 </style>
