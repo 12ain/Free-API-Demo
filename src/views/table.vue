@@ -2,6 +2,15 @@
     <div class="main">
         <van-nav-bar title="课程表"/>
         <div class="container">
+            <!-- <iframe
+            scrolling="no" 
+            frameborder="0" 
+            height="15px"
+            width="100%"
+            allowtransparency="true" 
+            src="//i.tianqi.com/index.php?c=code&id=11&icon=1&site=12"
+            style="margin-top:10px">
+            </iframe> -->
             <van-card
                 centered
                 title="前端框架应用"

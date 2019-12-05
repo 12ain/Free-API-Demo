@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <van-nav-bar title="今天吃什么"/>
+        <van-nav-bar title="轻量小工具"/>
         <tabbar/>
     </div>
 </template>

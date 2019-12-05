@@ -16,17 +16,17 @@
             </van-tabbar-item>
             <van-tabbar-item
             replace
-            to="/learn"
-            icon="bookmark-o"
+            to="/clock"
+            icon="underway-o"
             >
-            学习备忘录
+            番茄时钟
             </van-tabbar-item>
             <van-tabbar-item
             replace
-            to="/eat"
-            icon="smile-o"
+            to="/tools"
+            icon="diamond-o"
             >
-            吃饭
+            工具
             </van-tabbar-item>
         </van-tabbar>
     </div>
