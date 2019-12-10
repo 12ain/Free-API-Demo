@@ -49,10 +49,10 @@ export default {
     return {
       isStart: false, //开关
       flag: 0, //状态判断, 0表示停止,1表示番茄时间,2表示休息时间
-      tomatoMinute: "1", // 番茄时间
+      tomatoMinute: "05", // 番茄时间
       restMinute: "05",  // 休息时间
-      minute: '10', // 当前运行时间
-      second: '02', // 秒
+      minute: '05', // 当前运行时间
+      second: '00', // 秒
       clock:'',  // 定时器
       status: 'Session',
     };
@@ -64,12 +64,6 @@ export default {
   watch: {
   },
   methods: {
-    format (){
-      if (this.second < "10" && this.second != '0') {
-          this.second = '0' + this.second;
-          console.log('格式化')
-        }
-    },
     start() {
       this.isStart = true  // 开启时钟
       if(!this.flag){
@@ -86,7 +80,7 @@ export default {
             console.log('开始休息')
           }
       this.clock = setInterval(() => {
-          if (this.second == "") {
+          if (this.second == "" || this.second == '00') {
                 this.second = "60";
                 this.minute--;
                 console.log('一分钟过去了')
