@@ -13,16 +13,16 @@
             </iframe> -->
             <van-card
                 centered
-                title="前端框架应用"
-                desc="李老师"  
-                price="2608"
+                v-for="item in classData"
+                :key="item.id"
+                :title="item.name"
+                :desc="item.teacher"  
+                :price="item.address"
                 currency=""
                 thumb="https://iph.href.lu/90x90?text=%E6%9C%89%E8%AF%BE&bg=FF9999"
-                v-for="item in 4"
-                :key="item"
                 >
                 <div slot="num">
-                    10:20-12:00
+                    {{ item.time }}
                 </div>
             </van-card>
                 
@@ -40,7 +40,22 @@ export default {
     },
     data() {
         return {
-
+            classData:[
+                {
+                    id: 0,
+                    name: '前端框架应用',
+                    address: '2610',
+                    time: '10:20 - 12:00',
+                    teacher: '李老师',
+                },
+                {
+                    id: 1,
+                    name: 'Android程序设计',
+                    address: '2608',
+                    time: '08:25 - 10:05',
+                    teacher: '于老师',
+                }
+            ]
         };
     },
     computed: {
