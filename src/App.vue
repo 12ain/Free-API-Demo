@@ -6,4 +6,7 @@
 
 <style lang="scss">
 @import '../public/normalize.css';
+.container-WithNavbar{
+  margin-top: 45px;
+}
 </style>

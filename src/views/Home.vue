@@ -1,12 +1,12 @@
 <template>
     <div class="main">
 
-        <tabbar/>
+        <Tabbar/>
     </div>
 </template>
 
 <script>
-import tabbar from '@/components/tabbar'
+import Tabbar from '@/components/Tabbar'
 
 export default {
     props: {
@@ -33,7 +33,7 @@ export default {
 
     },
     components: {
-        tabbar
+        Tabbar
     },
 };
 </script>
