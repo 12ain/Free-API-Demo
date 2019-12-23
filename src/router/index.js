@@ -38,6 +38,16 @@ const routes = [
     name: 'base64',
     component: () => import('../views/features/base64.vue')
   },
+  {
+    path: '/shorturl',
+    name: 'shorturl',
+    component: () => import('../views/features/shorturl.vue')
+  },
+  {
+    path: '/smile',
+    name: 'smile',
+    component: () => import('../views/features/smile.vue')
+  },
 ]
 
 const router = new VueRouter({

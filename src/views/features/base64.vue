@@ -55,10 +55,12 @@ export default {
         encode(){
             console.log('加密')
             this.code.target = btoa(this.code.src)
+            this.$toast.success('加密成功')
         },
         decode(){
             console.log('解密')
             this.code.src = atob(this.code.target)
+            this.$toast.success('解密成功')
         },
     },
     components: {
