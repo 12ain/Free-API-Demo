@@ -19,6 +19,10 @@ import {
   DropdownMenu, 
   DropdownItem,
   Field,
+  Panel,
+  List,
+  Pagination,
+  PullRefresh,
 } from 'vant';
 Vue.config.productionTip = false
 Vue.use(Button);
@@ -34,6 +38,10 @@ Vue.use(Toast);
 Vue.use(DropdownMenu);
 Vue.use(DropdownItem);
 Vue.use(Field);
+Vue.use(Panel);
+Vue.use(List);
+Vue.use(Pagination);
+Vue.use(PullRefresh);
 
 new Vue({
   router,

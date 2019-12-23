@@ -3,6 +3,7 @@ export default {
     RemoteProxy: 'https://bird.ioliu.cn/v2?url=',
     features:{
         translate: 'http://fanyi.youdao.com/translate?&doctype=json',
-        shorturl: 'https://api.uomg.com/api/long2dwz'
+        shorturl: 'https://api.uomg.com/api/long2dwz',
+        smile: 'https://bird.ioliu.cn/joke/?type=text'
     }
 }

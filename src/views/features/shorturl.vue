@@ -16,7 +16,7 @@
                     v-model="url.tgt"
                     rows="1"
                     type="textarea"
-                    placeholder="结果"
+                    placeholder="转换结果"
                 />
         </div>
     </div>
@@ -59,7 +59,7 @@ export default {
                 // 请求成功的处理
                 this.url.tgt = res.data.ae_url
                 // console.log(res)
-                this.$toast.success('成功');
+                this.$toast.success('转换成功');
                 } else {
                 // 返回错误的处理
                 this.$toast(res.data.msg)
