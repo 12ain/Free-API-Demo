@@ -72,12 +72,17 @@ export default {
     },
     methods: {
         submit(){
-            this.http.get(this.api.features.translate + '&type=AUTO&i=计算', 
+            this.http.get(
+                this.api.RemoteProxy + this.api.features.translate + 
+                '&type='+ this.value +'&i=' + this.word.src, 
             res => {
-                if (res.success) {
-                console.log(res)
+                if (res.status == '200') {
+                // 请求成功的处理
+                this.word = res.data.translateResult[0][0]
+                // console.log(res)
                 } else {
                 // 返回错误的处理
+                console.log('error' + res)
                 }
             })
         }

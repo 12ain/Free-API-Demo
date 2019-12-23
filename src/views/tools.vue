@@ -29,18 +29,18 @@ export default {
                 {
                     id: 0,
                     name: '翻译',
-                    icon: 'failure',
+                    icon: 'smile-o',
                     path: '/translate',
                 },
                 {
                     id: 1,
-                    name: 'Base64编码转换',
-                    icon: 'failure',
-                    path: '',
+                    name: 'Base64',
+                    icon: 'thumb-circle-o',
+                    path: '/base64',
                 },
                 {
                     id: 2,
-                    name: '短链接生成及还原',
+                    name: '短网址',
                     icon: 'failure',
                     path: '',
                 },

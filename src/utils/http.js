@@ -45,7 +45,7 @@ function handleUrl(url) {
  * @return
  */
 function handleParams(data) {
-    return data
+    return qs.stringify(data)
 }
 
 export default {
@@ -66,7 +66,8 @@ export default {
             }
         }).then(
             (result) => {
-                response(handleResults(result))
+                response(result)
+                // response(handleResults(result))
             }
         ).catch(
             (error) => {
@@ -94,7 +95,8 @@ export default {
             }
         }).then(
             (result) => {
-                response(handleResults(result))
+                response(result)
+                // response(handleResults(result))
             }
         ).catch(
             (error) => {

@@ -33,6 +33,11 @@ const routes = [
     name: 'translate',
     component: () => import('../views/features/translate.vue')
   },
+  {
+    path: '/base64',
+    name: 'base64',
+    component: () => import('../views/features/base64.vue')
+  },
 ]
 
 const router = new VueRouter({
