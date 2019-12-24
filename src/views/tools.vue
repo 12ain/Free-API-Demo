@@ -2,7 +2,9 @@
     <div class="main">
         <van-nav-bar title="轻量小工具"/>
         <div class="container">
-            <van-grid>
+            <van-grid
+            :column-num="2"
+            >
                 <van-grid-item
                     v-for="item in features"
                     :key="item.id"
@@ -49,12 +51,6 @@ export default {
                     name: '轻松一刻',
                     icon: 'smile-o',
                     path: '/smile',
-                },
-                {
-                    id: 4,
-                    name: '快递查询',
-                    icon: 'failure',
-                    path: '',
                 },
             ]
         };

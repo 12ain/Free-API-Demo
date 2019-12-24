@@ -101,7 +101,7 @@ export default {
         // 重新初始化这些属性
         this.isLoading = false
         this.myList = []
-        this.page = 1
+        // this.page = 1
         this.loading = false
         this.finished = false
         this.noData = false

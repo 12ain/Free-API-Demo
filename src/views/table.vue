@@ -2,7 +2,7 @@
     <div class="main">
         <van-nav-bar title="课程表"/>
         <div class="container">
-            <!-- <iframe
+            <iframe
             scrolling="no" 
             frameborder="0" 
             height="15px"
@@ -10,7 +10,7 @@
             allowtransparency="true" 
             src="//i.tianqi.com/index.php?c=code&id=11&icon=1&site=12"
             style="margin-top:10px">
-            </iframe> -->
+            </iframe>
             <van-card
                 centered
                 v-for="item in classData"
@@ -85,5 +85,12 @@ export default {
 }
 .van-nav-bar{
     background-color: #8CF5CE;
+}
+.van-card__title{
+    font-size: 14px;
+}
+.van-card__price-integer{
+    color: red;
+    font-size: 13px;
 }
 </style>
