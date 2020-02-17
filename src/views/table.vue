@@ -19,7 +19,7 @@
                 :desc="item.teacher"  
                 :price="item.address"
                 currency=""
-                thumb="https://iph.href.lu/90x90?text=%E6%9C%89%E8%AF%BE&bg=FF9999"
+                thumb="//iph.href.lu/90x90?text=%E6%9C%89%E8%AF%BE&bg=FF9999"
                 >
                 <div slot="num">
                     {{ item.time }}
